@@ -41,7 +41,7 @@ export const metadata: Metadata & {
   msapplicationTileColor: string;
   msapplicationTileImage: string; // Agregado para msapplicationTileImage
 } = {
-  title: 'lisandrojm 🤟',
+  title: 'lisandrojm 🎯',
   description: 'Lisandro Martinez. Argentinian Full-Stack Dev. Developer based in Argentina.',
   authors: { name: 'Lisandro Martinez' },
   icons: {
@@ -69,22 +69,22 @@ export const metadata: Metadata & {
     images: [
       {
         url: 'https://lisandrojm.vercel.app/cover-share.webp',
-        alt: 'lisandrojm 🤟',
+        alt: 'lisandrojm 🎯',
       },
     ] as OpenGraphImage[],
-    title: 'lisandrojm 🤟',
+    title: 'lisandrojm 🎯',
     description: 'Lisandro Martinez. Argentinian Full-Stack Dev. Developer based in Argentina.',
     url: 'https://lisandrojm.vercel.app',
   },
   twitter: {
     card: 'summary',
     site: 'https://lisandrojm.vercel.app',
-    title: 'lisandrojm 🤟',
+    title: 'lisandrojm 🎯',
     description: 'Lisandro Martinez. Argentinian Full-Stack Dev. Developer based in Argentina.',
     images: [
       {
         url: 'https://lisandrojm.vercel.app/cover-share.webp',
-        alt: 'lisandrojm 🤟',
+        alt: 'lisandrojm 🎯',
       },
     ] as OpenGraphImage[],
   },
