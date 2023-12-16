@@ -3,19 +3,6 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* Fonts test start */}
-      <div>
-        {/* Prueba con la fuente Roboto Mono */}
-        <p className={`primary__font`}>Roboto Mono</p>
-      </div>
-      <div>
-        {/* Prueba con la fuente Roboto Flex */}
-        <p className={`secondary__font`}>Roboto Flex</p>
-      </div>
-      <div>
-        {/* Prueba con la fuente Roboto Serif */}
-        <p className={`tertiary__font`}>Roboto Serif</p>
-      </div>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
@@ -61,6 +48,14 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
         </a>
       </div>
+      {/* Fonts test start */}
+      <div>
+        <h1>Fonts test</h1>
+        <p className={`primary__font`}>Roboto Mono</p>
+        <p className={`secondary__font`}>Roboto Flex</p>
+        <p className={`tertiary__font`}>Roboto Serif</p>
+      </div>
+      {/* Fonts test start */}
     </main>
   );
 }
