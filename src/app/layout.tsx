@@ -39,7 +39,7 @@ export const metadata: Metadata & {
   httpEquiv?: HttpEquiv;
   msapplicationTapHighlight: string;
   msapplicationTileColor: string;
-  msapplicationTileImage: string; // Agregado para msapplicationTileImage
+  msapplicationTileImage: string;
 } = {
   title: 'lisandrojm 🎯',
   description: 'Lisandro Martinez. Argentinian Full-Stack Dev. Developer based in Argentina.',
