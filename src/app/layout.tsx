@@ -55,7 +55,7 @@ export const metadata: Metadata & {
     },
   },
   url: 'https://lisandrojm.vercel.app',
-  image: 'https://lisandrojm.vercel.app/cover-share.webp',
+  image: 'https://lisandrojm.vercel.app/img/cover-share.webp',
   charset: 'utf-8',
   httpEquiv: {
     'X-UA-Compatible': 'IE.edge',
@@ -68,7 +68,7 @@ export const metadata: Metadata & {
   openGraph: {
     images: [
       {
-        url: 'https://lisandrojm.vercel.app/cover-share.webp',
+        url: 'https://lisandrojm.vercel.app/img/cover-share.webp',
         alt: 'lisandrojm 🎯',
       },
     ] as OpenGraphImage[],
@@ -83,7 +83,7 @@ export const metadata: Metadata & {
     description: 'Lisandro Martinez. Argentinian Full-Stack Dev. Developer based in Argentina.',
     images: [
       {
-        url: 'https://lisandrojm.vercel.app/cover-share.webp',
+        url: 'https://lisandrojm.vercel.app/img/cover-share.webp',
         alt: 'lisandrojm 🎯',
       },
     ] as OpenGraphImage[],
