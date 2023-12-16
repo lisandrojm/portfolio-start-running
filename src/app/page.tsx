@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* Fonts test start */}
-      <div>Testing</div>
       <div>
         {/* Prueba con la fuente Roboto Mono */}
         <p className={`primary__font`}>Roboto Mono</p>
