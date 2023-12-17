@@ -5,7 +5,7 @@ import { Roboto_Mono } from 'next/font/google';
 import '../_styles/globals.css';
 import Navbar from '../_components/Navbar';
 
-const roboto = Roboto_Mono({ subsets: ['latin'] });
+const roboto_mono = Roboto_Mono({ subsets: ['latin'] });
 
 interface Icons {
   icon: string;
@@ -98,7 +98,7 @@ export const metadata: Metadata & {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={roboto_mono.className}>
         <Navbar />
         {children}
       </body>
