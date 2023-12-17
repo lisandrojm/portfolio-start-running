@@ -1,3 +1,5 @@
+/* src/app/page.tsx */
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -54,7 +56,7 @@ export default function Home() {
       </div>
       <div className="border rounded p-3 my-1">
         <h1 className="tertiary__font italic text-3xl">Fonts</h1>
-        <p className={`primary__font`}>Roboto Mono</p>
+        <p>Roboto Mono</p>
         <p className={`secondary__font`}>Roboto Flex</p>
         <p className={`tertiary__font`}>Roboto Serif</p>
         <p className={`tertiary__font font-bold`}>Roboto Serif bold</p>

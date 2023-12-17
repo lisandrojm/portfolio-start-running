@@ -1,11 +1,11 @@
-/* layout.tsx */
+/* src/app/layout.tsx */
 
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Navbar from './Navbar';
+import { Roboto_Mono } from 'next/font/google';
+import '../_styles/globals.css';
+import Navbar from '../_components/Navbar';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto_Mono({ subsets: ['latin'] });
 
 interface Icons {
   icon: string;
@@ -56,7 +56,7 @@ export const metadata: Metadata & {
     },
   },
   url: 'https://lisandrojm.vercel.app',
-  image: 'https://lisandrojm.vercel.app/assets/img/cover-share.webp',
+  image: 'https://lisandrojm.vercel.app/_assets/img/cover-share.webp',
   charset: 'utf-8',
   httpEquiv: {
     'X-UA-Compatible': 'IE.edge',
@@ -69,7 +69,7 @@ export const metadata: Metadata & {
   openGraph: {
     images: [
       {
-        url: 'https://lisandrojm.vercel.app/assets/img/cover-share.webp',
+        url: 'https://lisandrojm.vercel.app/_assets/img/cover-share.webp',
         alt: 'lisandrojm 🎯',
       },
     ] as OpenGraphImage[],
@@ -84,7 +84,7 @@ export const metadata: Metadata & {
     description: 'Lisandro Martinez. Argentinian Full-Stack Dev. Developer based in Argentina.',
     images: [
       {
-        url: 'https://lisandrojm.vercel.app/assets/img/cover-share.webp',
+        url: 'https://lisandrojm.vercel.app/_assets/img/cover-share.webp',
         alt: 'lisandrojm 🎯',
       },
     ] as OpenGraphImage[],
@@ -98,7 +98,7 @@ export const metadata: Metadata & {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Navbar />
         {children}
       </body>
