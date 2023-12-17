@@ -52,6 +52,8 @@ body {
 }
 
 /* Fonts */
+/* The primary font 'Roboto Mono' is defined in the body of src/app/layout.tsx */
+
 .secondary__font {
   font-family: 'Roboto Flex', sans-serif;
 }
