@@ -54,6 +54,9 @@ export default function Home() {
         <p className={`primary__font`}>Roboto Mono</p>
         <p className={`secondary__font`}>Roboto Flex</p>
         <p className={`tertiary__font`}>Roboto Serif</p>
+        <p className={`tertiary__font font-bold`}>Roboto Serif bold</p>
+        <p className={`tertiary__font italic`}>Roboto Serif italic</p>
+        <p className={`tertiary__font italic font-bold uppercase`}>Roboto Serif italic bold uppercase</p>
       </div>
       {/* Fonts test start */}
     </main>
