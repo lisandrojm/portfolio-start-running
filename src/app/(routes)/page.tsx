@@ -1,4 +1,4 @@
-/* src/app/page.tsx */
+/* src/app/(routes)/page.tsx */
 
 import Image from 'next/image';
 import Link from 'next/link';

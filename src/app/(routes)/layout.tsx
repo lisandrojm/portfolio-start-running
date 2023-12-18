@@ -1,9 +1,9 @@
-/* src/app/layout.tsx */
+/* src/app/(routes)/[...not_found]/page.tsx */
 
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
-import '../_styles/globals.css';
-import Navbar from '../_components/Navbar';
+import '@/_styles/globals.css';
+import Navbar from '@/_components/Navbar';
 
 const roboto_mono = Roboto_Mono({ subsets: ['latin'] });
 

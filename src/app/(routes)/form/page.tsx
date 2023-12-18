@@ -1,5 +1,4 @@
-import Link from 'next/link';
-
+/* src/app/(routes)/form/page.tsx */
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
