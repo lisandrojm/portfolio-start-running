@@ -1,4 +1,4 @@
-import React from 'react';
+/* src/app/(routes)/[...not_found]/loading.tsx */
 
 function LoadingPage() {
   return (

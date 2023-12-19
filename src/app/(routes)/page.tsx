@@ -3,10 +3,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
-  /* loading testing */
-  /*   await new Promise((resolve) => setTimeout(resolve, 3000)); */
+/* export default async function Home() { */
+/* loading testing */
+/*   await new Promise((resolve) => setTimeout(resolve, 1000)); */
 
+export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
       {/* Fonts test */}
