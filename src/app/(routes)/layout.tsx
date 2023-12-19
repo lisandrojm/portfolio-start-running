@@ -3,7 +3,8 @@
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import '@/_styles/globals.css';
-import Navbar from '@/_components/Navbar';
+import Navbar from '@/_components/Navbar/Navbar';
+import Footer from '@/_components/Footer/Footer';
 
 const roboto_mono = Roboto_Mono({ subsets: ['latin'] });
 
@@ -101,6 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={roboto_mono.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,8 +1,9 @@
-/* components/Navbar.tsx */
+/* src/app/_components/Navbar/Navbar.tsx */
 
+import '@/_components/Navbar/Navbar.css';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Navbar() {
   return (
     <nav className="m-3">
       <div className="border rounded p-3 my-4 flex justify-between items-end">
