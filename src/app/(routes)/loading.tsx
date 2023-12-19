@@ -1,6 +1,6 @@
 /* src/app/(routes)/[...not_found]/loading.tsx */
 
-function LoadingPage() {
+export default function Loading() {
   return (
     <div className="flex flex-col items-center justify-between">
       <div className="border rounded p-3 my-1 mb-3">
@@ -9,5 +9,3 @@ function LoadingPage() {
     </div>
   );
 }
-
-export default LoadingPage;

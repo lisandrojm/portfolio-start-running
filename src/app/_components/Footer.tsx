@@ -1,6 +1,5 @@
-/* src/app/_components/Navbar/Navbar.tsx */
+/* src/app/_components/Footer.tsx */
 
-import '@/_components/Footer/Footer.css';
 import Link from 'next/link';
 
 export default function Footer() {
