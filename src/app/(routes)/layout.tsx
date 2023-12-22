@@ -1,4 +1,4 @@
-/* src/app/(routes)/[...not_found]/layout.tsx */
+/* src/app/(routes)/layout.tsx */
 
 import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';

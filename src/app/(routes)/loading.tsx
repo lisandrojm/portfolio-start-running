@@ -1,4 +1,4 @@
-/* src/app/(routes)/[...not_found]/loading.tsx */
+/* src/app/(routes)/loading.tsx */
 
 export default function Loading() {
   return (
