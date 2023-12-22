@@ -59,6 +59,18 @@ body {
   overscroll-behavior: none;
 }
 
+/* Fonts */
+
+.font-mono {
+  font-family: var(--font-mono), sans-serif;
+}
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+.font-flex {
+  font-family: var(--font-flex), sans-serif;
+}
+
 /* Media queries */
 @media (min-width: 992px) {
   /* ... */

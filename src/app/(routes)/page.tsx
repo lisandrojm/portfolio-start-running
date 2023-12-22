@@ -12,9 +12,9 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between">
       {/* Fonts test */}
       <div className="border rounded p-3 my-1 mb-3">
-        <h1 className="text-3xl">Home</h1>
+        <h1 className="font-serif italic text-3xl">Home</h1>
       </div>
-      {/*       <div className="border rounded p-3 my-1">
+      <div className="border rounded p-3 my-1">
         <h1 className="font-serif italic text-3xl">Fonts</h1>
         <p>Roboto Mono</p>
         <p className={`font-flex`}>Roboto Flex</p>
@@ -22,7 +22,7 @@ export default function Home() {
         <p className={`font-serif font-bold`}>Roboto Serif bold</p>
         <p className={`font-serif italic`}>Roboto Serif italic</p>
         <p className={`font-serif italic font-bold uppercase`}>Roboto Serif italic bold uppercase</p>
-      </div> */}
+      </div>
     </main>
     /*     <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">

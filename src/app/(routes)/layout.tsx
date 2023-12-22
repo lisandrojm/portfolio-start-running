@@ -1,12 +1,14 @@
 /* src/app/(routes)/layout.tsx */
 
 import type { Metadata } from 'next';
-import { Roboto_Mono } from 'next/font/google';
+import { Roboto_Mono, Roboto_Serif, Roboto_Flex } from 'next/font/google';
 import '@/_styles/globals.css';
 import Navbar from '@/_components/Navbar';
 import Footer from '@/_components/Footer';
 
-const roboto_mono = Roboto_Mono({ subsets: ['latin'] });
+const roboto_mono = Roboto_Mono({ subsets: ['latin'], variable: '--font-mono' });
+const roboto_serif = Roboto_Serif({ subsets: ['latin'], variable: '--font-serif' });
+const roboto_flex = Roboto_Flex({ subsets: ['latin'], variable: '--font-flex' });
 
 interface Icons {
   icon: string;
@@ -98,8 +100,8 @@ export const metadata: Metadata & {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={roboto_mono.className}>
+    <html lang="en" className={`${roboto_mono.variable} ${roboto_serif.variable} ${roboto_flex.variable}`}>
+      <body className="font-mono">
         <Navbar />
         {children}
         <Footer />
