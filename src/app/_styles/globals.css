@@ -1,8 +1,23 @@
 /* src/app/_styles/globals.css */
 
+/* Table of Content
+====================
+* Tailwind imports
+* Root elements
+* Global variables
+* Fonts
+* Media queries
+*/
+
+/* ------------------------------------------------------------- */
+/* Tailwind imports  */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ------------------------------------------------------------- */
+/* Root elements */
 
 :root {
   /* Colors */
@@ -14,7 +29,6 @@
   --violet: #ba9af7;
   --red: #f7768e;
   --orange: #ff9e63;
-  /* Fonts */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +38,9 @@
   }
 }
 
-/* Reset */
+/* ------------------------------------------------------------- */
+/* Global variables */
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +54,6 @@ html {
   overflow-x: hidden;
 }
 
-/* Images and Lists */
 img {
   max-width: 100%;
 }
@@ -49,7 +64,6 @@ a {
   text-decoration: none;
 }
 
-/* Body Styles */
 body {
   color: var(--foreground);
   background: var(--background);
@@ -59,6 +73,7 @@ body {
   overscroll-behavior: none;
 }
 
+/* ------------------------------------------------------------- */
 /* Fonts */
 
 .font-mono {
@@ -71,7 +86,9 @@ body {
   font-family: var(--font-flex), sans-serif;
 }
 
+/* ------------------------------------------------------------- */
 /* Media queries */
+
 @media (min-width: 992px) {
   /* ... */
 }
@@ -110,11 +127,4 @@ body {
 
 @media (max-width: 540px) {
   /* ... */
-}
-html {
-  font-family: var(--font-inter);
-}
-
-h1 {
-  font-family: var(--font-inter);
 }
