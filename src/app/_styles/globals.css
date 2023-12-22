@@ -14,10 +14,7 @@
   --violet: #ba9af7;
   --red: #f7768e;
   --orange: #ff9e63;
-  /* Fonts Families */
-  --font-prymary is defined in 
-  --font-secondary: Roboto Flex;
-  --font-tertiary: Roboto Serif;
+  /* Fonts */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,17 +59,6 @@ body {
   overscroll-behavior: none;
 }
 
-/* Fonts */
-/* The primary font 'Roboto Mono' is defined in the body of src/app/layout.tsx */
-
-.font-family--primary {
-  font-family: 'Roboto Flex', sans-serif;
-}
-
-.tertiary__font {
-  font-family: 'Roboto Serif', serif;
-}
-
 /* Media queries */
 @media (min-width: 992px) {
   /* ... */
@@ -112,4 +98,11 @@ body {
 
 @media (max-width: 540px) {
   /* ... */
+}
+html {
+  font-family: var(--font-inter);
+}
+
+h1 {
+  font-family: var(--font-inter);
 }
