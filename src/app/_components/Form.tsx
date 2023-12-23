@@ -3,11 +3,7 @@
 
 import styles from '@/_styles/_components/Form.module.css';
 import { useState } from 'react';
-import { Button, Input, FloatingLabelInput, FloatingLabelTextarea } from '@/_components/_ui';
-
-function classNames(...classes: string[]): string {
-  return classes.filter(Boolean).join(' ');
-}
+import { Button, FloatingLabelInput, FloatingLabelTextarea } from '@/_components/_ui';
 
 export default function Example() {
   const [agreed, setAgreed] = useState(false);
