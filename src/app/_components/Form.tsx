@@ -27,15 +27,15 @@ export default function Example() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="isola px-6 lg:px-8">
-      <div className="mx-auto uppercase max-w-xl">
+    <div className="px-6 lg:px-8">
+      <div className="mx-auto uppercase max-w-md">
         <h2 className="text-3xl font-bold tracking-tight text-orange sm:text-4xl">
           {' '}
           Let&apos;s go <br />
           to the point
         </h2>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-6 max-w-xl sm:mt-6">
+      <form action="#" method="POST" className="mx-auto mt-6 max-w-md sm:mt-6">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="sm:col-span-2">
             <div>
