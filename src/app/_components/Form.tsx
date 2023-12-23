@@ -3,7 +3,7 @@
 
 import styles from '@/_styles/_components/Form.module.css';
 import { useState } from 'react';
-import { Button, Input, FloatingLabelInput, Textarea } from '@/_components/_ui';
+import { Button, Input, FloatingLabelInput, FloatingLabelTextarea } from '@/_components/_ui';
 
 function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ');
@@ -25,23 +25,17 @@ export default function Example() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="sm:col-span-2">
             <div>
-              <Input placeholder="Name" type="text" name="name" id="name" autoComplete="organization" />
+              <FloatingLabelInput id="name" label="Name" type="text" name="name" autoComplete="name" />
             </div>
           </div>
           <div className="sm:col-span-2">
             <div>
-              <Input placeholder="Email" type="email" name="email" id="email" autoComplete="email" required />
+              <FloatingLabelInput id="email" label="Email" type="email" name="email" autoComplete="email" required />
             </div>
           </div>
           <div className="sm:col-span-2">
             <div>
-              <FloatingLabelInput id="name" label="Name" />
-              {/* Otros campos de entrada flotante */}
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <div>
-              <Textarea placeholder="Message" defaultValue={''} name="message" id="message" rows={5} />
+              <FloatingLabelTextarea id="message" label="Message" name="message" autoComplete="message" rows={4} defaultValue={''} />
             </div>
           </div>
         </div>
