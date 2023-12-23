@@ -20,21 +20,28 @@
 /* Root elements */
 
 :root {
-  /* Colors */
-  --foreground: #000000;
-  --background: #ffffff;
-  --darkblue: #15151e;
-  --green: #08c294;
-  --blue: #79a1f7;
-  --violet: #ba9af7;
-  --red: #f7768e;
-  --orange: #ff9e63;
+  /* :light */
+  --white: #000000;
+  --black: #ffffff;
+  --darkblue: #f7768e;
+  --green: #ba9af7;
+  --blue: #ff9e63;
+  --violet: #08c294;
+  --red: #15151e;
+  --orange: #79a1f7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #ffffff;
-    --background: #000000;
+    /* :dark */
+    --white: #ffffff;
+    --black: #000000;
+    --darkblue: #15151e;
+    --green: #08c294;
+    --blue: #79a1f7;
+    --violet: #ba9af7;
+    --red: #f7768e;
+    --orange: #ff9e63;
   }
 }
 
@@ -65,8 +72,8 @@ a {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--orange);
+  background: var(--black);
   overflow-x: hidden;
   max-width: 100%;
   width: 100%;
