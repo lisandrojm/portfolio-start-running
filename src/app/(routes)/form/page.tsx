@@ -1,11 +1,10 @@
 /* src/app/(routes)/form/page.tsx */
+import Form from '@/_components/Form';
 
-export default function Form() {
+export default function ContactForm() {
   return (
-    <main className="flex flex-col items-center justify-between">
-      <div className="border rounded p-3 my-1">
-        <h1 className="tertiary__font italic text-3xl">Form</h1>
-      </div>
+    <main>
+      <Form />
     </main>
   );
 }

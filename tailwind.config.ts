@@ -8,8 +8,16 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        customColor: '#ff9e63',
+        green: '#08c294',
+        blue: '#79a1f7',
+        violet: '#ba9af7',
+        red: '#f7768e',
+        orange: '#ff9e63',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
 export default config;
