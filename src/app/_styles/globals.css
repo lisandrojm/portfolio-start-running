@@ -72,7 +72,7 @@ a {
 }
 
 body {
-  color: var(--orange);
+  color: var(--white);
   background: var(--black);
   overflow-x: hidden;
   max-width: 100%;
