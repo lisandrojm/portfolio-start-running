@@ -17,7 +17,7 @@ export default function Navbar() {
           </li>
           <li className="m-1 mr-4 flex items-center">
             <Link className="underline" href="/form">
-              Form
+              For
             </Link>
           </li>
           <ThemeToggle />
