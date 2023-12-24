@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 
-const ThemeSwitcher = () => {
+export default function ThemeSwitcher() {
   const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
@@ -20,6 +20,4 @@ const ThemeSwitcher = () => {
   }, []); // Solo se ejecuta una vez al montar el componente
 
   return <button onClick={toggleTheme}>Switch to {theme === 'dark' ? 'light' : 'dark'} mode</button>;
-};
-
-export default ThemeSwitcher;
+}
