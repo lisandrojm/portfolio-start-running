@@ -1,7 +1,6 @@
 // src/app/_components/ThemeSwitcher.tsx
 'use client';
-
-import { MoonIcon, SunIcon } from '@heroicons/react/solid'; // Import MoonIcon and SunIcon from Heroicons
+import { Button } from '@/_components/_ui';
 
 import { useState, useEffect } from 'react';
 
@@ -21,10 +20,5 @@ export default function ThemeSwitcher() {
     setTheme(userPrefersDark ? 'dark' : 'light');
   }, []); // Solo se ejecuta una vez al montar el componente
 
-  return (
-    <button className="text-orange" onClick={toggleTheme}>
-      {/* Use the SunIcon and MoonIcon based on the current theme */}
-      {theme === 'dark' ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
-    </button>
-  );
+  return <Button onClick={toggleTheme}>Switch to {theme === 'dark' ? 'light' : 'dark'} mode</Button>;
 }
