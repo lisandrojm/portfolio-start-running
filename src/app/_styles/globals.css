@@ -8,7 +8,6 @@
 * Fonts
 * Media queries
 */
-
 /* Tailwind imports */
 @tailwind base;
 @tailwind components;
@@ -16,9 +15,9 @@
 
 /* Global variables */
 :root {
-  --color-primary: 255 115 179;
-  --white: #ffffff;
-  --black: #000000;
+  /* Colors */
+  --white: #000000;
+  --black: #ffffff;
   --darkblue: #f7768e;
   --green: #ba9af7;
   --blue: #ff9e63;
@@ -27,15 +26,17 @@
   --orange: #79a1f7;
 }
 
-[data-theme='dark'] {
-  --white: #ffffff;
-  --black: #000000;
-  --darkblue: #15151e;
-  --green: #08c294;
-  --blue: #79a1f7;
-  --violet: #ba9af7;
-  --red: #f7768e;
-  --orange: #ff9e63;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --darkblue: #15151e;
+    --green: #08c294;
+    --blue: #79a1f7;
+    --violet: #ba9af7;
+    --red: #f7768e;
+    --orange: #ff9e63;
+  }
 }
 
 [data-theme='light'] {

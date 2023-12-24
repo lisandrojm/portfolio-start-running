@@ -15,7 +15,7 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li className="m-1 mr-5">
+          <li className="m-1 mr-2">
             <Link className="underline" href="/form">
               Form
             </Link>

@@ -1,21 +1,20 @@
-/* src/app/_components/ThemeToggle.tsx */
+// src/app/_components/ThemeToggle.tsx
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/_components/_ui';
 
 const ThemeToggle: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
     setDarkMode(currentTheme === 'dark');
   }, []);
 
   const toggleTheme = () => {
-    setDarkMode((prevMode) => !prevMode);
-
     const newTheme = darkMode ? 'light' : 'dark';
+    setDarkMode((prevMode) => !prevMode);
     document.documentElement.setAttribute('data-theme', newTheme);
   };
 
