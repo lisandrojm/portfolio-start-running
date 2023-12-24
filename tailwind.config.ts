@@ -5,18 +5,15 @@ const config: Config = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       colors: {
-        black: 'var(--black)',
-        white: 'var(--white)',
-        green: 'var(--green)',
-        blue: 'var(--blue)',
-        violet: 'var(--violet)',
-        red: 'var(--red)',
-        orange: 'var(--orange)',
+        black: 'var(--accent-1)',
+        white: 'var(--accent-2)',
+        darkblue: 'var(--accent-3)',
+        green: 'var(--accent-4)',
+        blue: 'var(--accent-5)',
+        violet: 'var(--accent-6)',
+        red: 'var(--accent-7)',
+        orange: 'var(--accent-8)',
       },
     },
   },
