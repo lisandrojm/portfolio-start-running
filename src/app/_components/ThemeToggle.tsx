@@ -6,22 +6,18 @@ import { Button } from '@/_components/_ui';
 import { MoonIcon, SunIcon } from '@heroicons/react/solid';
 
 const ThemeToggle: React.FC = () => {
-  // Obtener el estado inicial de darkMode desde el localStorage
-  const storedDarkMode = localStorage.getItem('darkMode');
-  const [darkMode, setDarkMode] = useState(storedDarkMode ? JSON.parse(storedDarkMode) : true);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    // Configurar el tema al cargar la página
-    const currentTheme = darkMode ? 'dark' : 'light';
+    const currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', currentTheme);
-  }, [darkMode]);
+    setDarkMode(currentTheme === 'dark');
+  }, []);
 
   const toggleTheme = () => {
-    // Cambiar el estado de darkMode al contrario de su valor actual
-    setDarkMode((prevMode: any) => !prevMode);
-
-    // Guardar el nuevo estado en el localStorage
-    localStorage.setItem('darkMode', JSON.stringify(!darkMode));
+    const newTheme = darkMode ? 'light' : 'dark';
+    setDarkMode((prevMode) => !prevMode);
+    document.documentElement.setAttribute('data-theme', newTheme);
   };
 
   return <Button onClick={toggleTheme}>{darkMode ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}</Button>;

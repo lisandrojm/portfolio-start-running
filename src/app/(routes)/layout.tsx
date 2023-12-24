@@ -105,6 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <Footer />
+        <script src="./_scripts/main.js" defer></script>
       </body>
     </html>
   );
