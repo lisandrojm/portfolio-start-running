@@ -100,7 +100,7 @@ export const metadata: Metadata & {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="dark" className={`${roboto_mono.variable} ${roboto_serif.variable} ${roboto_flex.variable}`}>
+    <html lang="en" className={`${roboto_mono.variable} ${roboto_serif.variable} ${roboto_flex.variable}`}>
       <body className="font-mono">
         <Navbar />
         {children}
