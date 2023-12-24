@@ -7,15 +7,15 @@ import ThemeToggle from '@/_components/ThemeToggle';
 export default function Navbar() {
   return (
     <nav className={`${styles.navbar} m-3`}>
-      <div className="border rounded p-3 my-4 flex justify-between items-end">
+      <div className="border rounded p-3 my-4 flex justify-between items-center">
         <h1 className="m-1 tertiary__font italic text-3xl">Navbar</h1>
         <ul className="flex">
-          <li className="m-1 pb-1">
+          <li className="m-1 flex items-center">
             <Link className="underline" href="/">
               Home
             </Link>
           </li>
-          <li className="m-1 mr-2">
+          <li className="m-1 mr-4 flex items-center">
             <Link className="underline" href="/form">
               Form
             </Link>

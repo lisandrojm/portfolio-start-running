@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/_components/_ui';
+import { MoonIcon, SunIcon } from '@heroicons/react/solid';
 
 const ThemeToggle: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -19,7 +20,7 @@ const ThemeToggle: React.FC = () => {
     document.documentElement.setAttribute('data-theme', newTheme);
   };
 
-  return <Button onClick={toggleTheme}>{darkMode ? 'Light Mode' : 'Dark Mode'}</Button>;
+  return <Button onClick={toggleTheme}>{darkMode ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}</Button>;
 };
 
 export default ThemeToggle;
