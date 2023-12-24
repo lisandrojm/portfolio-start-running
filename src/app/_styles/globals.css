@@ -39,7 +39,7 @@
     --accent-8: #ff9e63; /* orange */
   }
 }
-/* [data-theme='dark'] {
+[data-theme='dark'] {
   --accent-1: #ffffff;
   --accent-2: #000000;
   --accent-3: #15151e;
@@ -48,7 +48,7 @@
   --accent-6: #ba9af7;
   --accent-7: #f7768e;
   --accent-8: #ff9e63;
-} */
+}
 
 [data-theme='light'] {
   --accent-1: #000000;
