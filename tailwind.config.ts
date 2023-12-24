@@ -6,8 +6,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        black: 'var(--accent-1)',
-        white: 'var(--accent-2)',
+        white: 'var(--accent-1)',
+        black: 'var(--accent-2)',
         darkblue: 'var(--accent-3)',
         green: 'var(--accent-4)',
         blue: 'var(--accent-5)',
