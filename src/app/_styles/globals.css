@@ -9,20 +9,27 @@
 * Media queries
 */
 
-/* ------------------------------------------------------------- */
-/* Tailwind imports  */
-
+/* Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ------------------------------------------------------------- */
-/* Root elements */
-
+/* Global variables */
 :root {
-  /* Colors */
-  --white: #000000;
-  --black: #ffffff;
+  --color-primary: 255 115 179;
+  --white: #ffffff;
+  --black: #000000;
+  --darkblue: #f7768e;
+  --green: #ba9af7;
+  --blue: #ff9e63;
+  --violet: #08c294;
+  --red: #15151e;
+  --orange: #79a1f7;
+}
+
+[data-theme='dark'] {
+  --white: #ffffff;
+  --black: #000000;
   --darkblue: #15151e;
   --green: #08c294;
   --blue: #79a1f7;
@@ -31,22 +38,18 @@
   --orange: #ff9e63;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --white: #ffffff;
-    --black: #000000;
-    --darkblue: #15151e;
-    --green: #08c294;
-    --blue: #79a1f7;
-    --violet: #ba9af7;
-    --red: #f7768e;
-    --orange: #ff9e63;
-  }
+[data-theme='light'] {
+  --white: #000000;
+  --black: #ffffff;
+  --darkblue: #f7768e;
+  --green: #ba9af7;
+  --blue: #ff9e63;
+  --violet: #08c294;
+  --red: #15151e;
+  --orange: #79a1f7;
 }
 
-/* ------------------------------------------------------------- */
-/* Global variables */
-
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -79,22 +82,14 @@ body {
   overscroll-behavior: none;
 }
 
-/* ------------------------------------------------------------- */
 /* Fonts */
-
-.font-mono {
+.font-mono,
+.font-serif,
+.font-flex {
   font-family: var(--font-mono), sans-serif;
 }
-.font-serif {
-  font-family: var(--font-serif), serif;
-}
-.font-flex {
-  font-family: var(--font-flex), sans-serif;
-}
 
-/* ------------------------------------------------------------- */
 /* Media queries */
-
 @media (min-width: 992px) {
   /* ... */
 }

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import styles from '@/_styles/_components/Navbar.module.css';
+import ThemeToggle from '@/_components/ThemeToggle';
 
 export default function Navbar() {
   return (
@@ -14,11 +15,12 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li className="m-1">
+          <li className="m-1 mr-5">
             <Link className="underline" href="/form">
               Form
             </Link>
           </li>
+          <ThemeToggle />
         </ul>
       </div>
     </nav>
