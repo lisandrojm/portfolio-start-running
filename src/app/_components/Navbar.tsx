@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import styles from '@/_styles/_components/Navbar.module.css';
-import ThemeSwitcher from '@/_components/ThemeSwitcher';
 export default function Navbar() {
   return (
     <nav className={`${styles.navbar} m-3`}>
@@ -19,7 +18,6 @@ export default function Navbar() {
               Form
             </Link>
           </li>
-          <ThemeSwitcher />
         </ul>
       </div>
     </nav>
