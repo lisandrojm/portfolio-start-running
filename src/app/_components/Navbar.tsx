@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import styles from '@/_styles/_components/Navbar.module.css';
-import ThemeToggle from '@/_components/ThemeToggle';
-
+import ThemeToggle from './ThemeToggle'; // Importa el nuevo componente
 export default function Navbar() {
   return (
     <nav className={`${styles.navbar} m-3`}>
