@@ -1,36 +1,40 @@
 // src/app/_components/ThemeToggle.tsx
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/_components/_ui';
 import { MoonIcon, SunIcon } from '@heroicons/react/solid';
 
 const ThemeToggle: React.FC = () => {
   // Obtener el tema actual del localStorage o usar el tema por defecto
-  const storedTheme = typeof window !== 'undefined' ? localStorage.getItem('theme') : null;
-  const currentTheme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-
-  const [darkMode, setDarkMode] = useState(currentTheme === 'dark');
+  const savedTheme = typeof window !== 'undefined' ? localStorage.getItem('theme') : null;
+  const [darkMode, setDarkMode] = useState(savedTheme === 'dark');
 
   useEffect(() => {
-    // Aplicar el tema actual al cargar el componente
-    if (typeof window !== 'undefined') {
-      document.documentElement.setAttribute('data-theme', currentTheme);
+    // Verificar si se ha guardado un tema en el localStorage
+    if (savedTheme !== null) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      setDarkMode(savedTheme === 'dark');
+    } else {
+      // Si no hay un tema guardado, usar el tema preferido del usuario o el tema por defecto
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', preferredTheme);
+      setDarkMode(preferredTheme === 'dark');
     }
-  }, [currentTheme]);
+  }, [savedTheme]);
 
   const toggleTheme = () => {
-    // Cambiar el tema y guardarlo en el localStorage
     const newTheme = darkMode ? 'light' : 'dark';
-    setDarkMode((prevMode) => !prevMode);
-
+    setDarkMode(!darkMode);
+    document.documentElement.setAttribute('data-theme', newTheme);
+    // Guardar el tema en el localStorage si está definido
     if (typeof window !== 'undefined') {
-      document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
     }
   };
 
-  return <Button onClick={toggleTheme}>{darkMode ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}</Button>;
+  const icon = darkMode ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />;
+
+  return <Button onClick={toggleTheme}>{icon}</Button>;
 };
 
 export default ThemeToggle;
