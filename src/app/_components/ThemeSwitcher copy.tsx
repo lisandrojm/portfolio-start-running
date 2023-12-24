@@ -2,6 +2,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { SunIcon, MoonIcon } from '@heroicons/react/solid';
 
 export default function ThemeSwitcher() {
   const [theme, setTheme] = useState('dark');
@@ -19,5 +20,10 @@ export default function ThemeSwitcher() {
     setTheme(userPrefersDark ? 'dark' : 'light');
   }, []); // Solo se ejecuta una vez al montar el componente
 
-  return <button onClick={toggleTheme}>Switch to {theme === 'dark' ? 'light' : 'dark'} mode</button>;
+  return (
+    <button onClick={toggleTheme}>
+      {theme === 'dark' ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
+      <span className="sr-only">{theme === 'dark' ? 'Light' : 'Dark'} mode</span>
+    </button>
+  );
 }
