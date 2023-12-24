@@ -85,6 +85,20 @@ a {
   list-style: none;
   text-decoration: none;
 }
+button:hover {
+  --accent-1: var(--accent-5);
+  --accent-2: var(--accent-8);
+  --accent-6: var(--accent-4);
+  --accent-7: var(--accent-3);
+  --accent-8: var(--accent-5);
+}
+li:hover {
+  --accent-1: var(--accent-5);
+  --accent-2: var(--accent-8);
+  --accent-6: var(--accent-4);
+  --accent-7: var(--accent-3);
+  --accent-8: var(--accent-5);
+}
 
 body {
   color: var(--accent-1);

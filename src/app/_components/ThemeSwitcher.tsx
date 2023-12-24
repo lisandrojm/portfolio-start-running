@@ -22,7 +22,7 @@ export default function ThemeSwitcher() {
   }, []); // Solo se ejecuta una vez al montar el componente
 
   return (
-    <button className="text-orange hover:text-white" onClick={toggleTheme}>
+    <button className="text-orange" onClick={toggleTheme}>
       {/* Use the SunIcon and MoonIcon based on the current theme */}
       {theme === 'dark' ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
     </button>

@@ -10,12 +10,12 @@ export default function Navbar() {
         <h1 className="m-1 tertiary__font italic text-3xl">Navbar</h1>
         <ul className="flex">
           <li className="m-1 flex items-center">
-            <Link className="underline" href="/">
+            <Link className="underline text-white" href="/">
               Home
             </Link>
           </li>
           <li className="m-1 mr-4 flex items-center">
-            <Link className="underline" href="/form">
+            <Link className="underline text-white" href="/form">
               Form
             </Link>
           </li>

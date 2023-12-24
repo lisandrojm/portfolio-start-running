@@ -10,12 +10,12 @@ export default function Footer() {
         <h1 className="m-1 tertiary__font italic text-3xl">Footer</h1>
         <ul className="flex">
           <li className="m-1 pb-1">
-            <Link className="underline" href="/">
+            <Link className="underline text-white" href="/">
               Home
             </Link>
           </li>
           <li className="m-1">
-            <Link className="underline" href="/form">
+            <Link className="underline text-white" href="/form">
               Form
             </Link>
           </li>
