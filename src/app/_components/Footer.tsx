@@ -5,7 +5,7 @@ import styles from '@/_styles/_components/Footer.module.css';
 
 export default function Footer() {
   return (
-    <footer className={`${styles.navbar} m-3`}>
+    <footer className={`${styles.footer} m-3`}>
       <div className="border rounded p-3 my-4 flex justify-between items-end">
         <h1 className="m-1 tertiary__font italic text-3xl">Footer</h1>
         <ul className="flex">
