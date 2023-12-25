@@ -5,7 +5,7 @@ import { Roboto_Mono, Roboto_Serif, Roboto_Flex } from 'next/font/google';
 import '@/_styles/globals.css';
 import Navbar from '@/_components/Navbar';
 import Footer from '@/_components/Footer';
-
+import Provider from '@/_components/Provider';
 const roboto_mono = Roboto_Mono({ subsets: ['latin'], variable: '--font-mono' });
 const roboto_serif = Roboto_Serif({ subsets: ['latin'], variable: '--font-serif' });
 const roboto_flex = Roboto_Flex({ subsets: ['latin'], variable: '--font-flex' });
@@ -102,9 +102,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${roboto_mono.variable} ${roboto_serif.variable} ${roboto_flex.variable}`}>
       <body className="font-mono">
-        <Navbar />
-        {children}
-        <Footer />
+        <Provider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
